@@ -4,6 +4,7 @@ This is basic rabbitmq library, which pushed data directly to queue or to an exc
 
 # How to use
 
+* Install it using `go get github.com/suyash95/Queuelib`
 * Import library as `import ( "queuelib" )`.
 * Define config of the queue to be connected as below:
     ```
