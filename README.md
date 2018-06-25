@@ -6,7 +6,8 @@ This is basic rabbitmq library, which pushed data directly to queue or to an exc
 
 * Import library as `import ( "queuelib" )`.
 * Define config of the queue to be connected as below:
-    ``` config := queuelib.Config{
+    ```
+    config := queuelib.Config{
 		Username:     "guest",
 		Password:     "guest",
 		Host:         "localhost",
@@ -15,20 +16,24 @@ This is basic rabbitmq library, which pushed data directly to queue or to an exc
 		Exchange:     "",
 		ExchangeType: "fanout",
 		Routingkey:   "test",
-	}```
+	}
+    ```
     `if data is being pushed to exchange, no need to pass queuename`.
 
 * Initialize to eastablish the connection:
-    ```initErr := queuelib.Init(&config)
+    ```
+    initErr := queuelib.Init(&config)
 	if initErr != nil {
 		return initErr
-	}```
-
+	}
+    ```
 * get the connection handler as `queuelib.Conn`.
 * Publish message to queue:
-    ``` publishError := queue.Publish(config, data)
+    ``` 
+    publishError := queue.Publish(config, data)
 	if publishError != nil {
 		return publishError
-	}```
+	}
+    ```
 
 
