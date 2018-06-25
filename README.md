@@ -1,6 +1,6 @@
 # Queuelib
 
-This is basic rabbitmq library, which pushed data to directly on queue or to an exchange. It makes use of a singleton type connection, i.e once connection got established, same connection handler will be used for the lifetime of the app to publish messages to queue.
+This is basic rabbitmq library, which pushed data directly to queue or to an exchange. It makes use of a singleton type connection, i.e once connection got established, same connection handler will be used for the lifetime of the app to publish messages to queue.
 
 # How to use
 
